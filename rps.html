@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+    <section class="playArea">
+        <h2>Rock | Paper | Scissors</h2>
+        <div class="buttons">
+            <button class="moves" title="Rock" onclick="pickPlayerMove('Rock')">✊</button>
+            <button class="moves" title="Paper" onclick="pickPlayerMove('Paper')">🖐️</button>
+            <button class="moves" title="Scissor" onclick="pickPlayerMove('Scissors')">✌️</button>
+        </div>
+        <div class="outcomes">
+            <p class="js-move"></p>
+            <p class="js-result"></p>
+            <p class="js-score"></p>
+        </div>
+        <button class="reset" onclick="resetScore()">Reset Score</button>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
